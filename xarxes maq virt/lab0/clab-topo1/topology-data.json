@@ -1,0 +1,377 @@
+{
+  "name": "topo1",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-f48258793418",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "nodes": {
+    "PC1": {
+      "index": "0",
+      "shortname": "PC1",
+      "longname": "clab-topo1-PC1",
+      "fqdn": "PC1.topo1.io",
+      "group": "",
+      "labdir": "/home/ass/labs/lab0/clab-topo1/PC1",
+      "kind": "linux",
+      "image": "praqma/network-multitool:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f48258793418",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ass/labs/lab0/clab-topo1/PC1",
+        "clab-node-name": "PC1",
+        "clab-node-type": "",
+        "clab-owner": "ass",
+        "clab-topo-file": "/home/ass/labs/lab0/topo1.clab.yml",
+        "containerlab": "topo1"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "PC2": {
+      "index": "1",
+      "shortname": "PC2",
+      "longname": "clab-topo1-PC2",
+      "fqdn": "PC2.topo1.io",
+      "group": "",
+      "labdir": "/home/ass/labs/lab0/clab-topo1/PC2",
+      "kind": "linux",
+      "image": "praqma/network-multitool:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f48258793418",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ass/labs/lab0/clab-topo1/PC2",
+        "clab-node-name": "PC2",
+        "clab-node-type": "",
+        "clab-owner": "ass",
+        "clab-topo-file": "/home/ass/labs/lab0/topo1.clab.yml",
+        "containerlab": "topo1"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "PC3": {
+      "index": "2",
+      "shortname": "PC3",
+      "longname": "clab-topo1-PC3",
+      "fqdn": "PC3.topo1.io",
+      "group": "",
+      "labdir": "/home/ass/labs/lab0/clab-topo1/PC3",
+      "kind": "linux",
+      "image": "praqma/network-multitool:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f48258793418",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ass/labs/lab0/clab-topo1/PC3",
+        "clab-node-name": "PC3",
+        "clab-node-type": "",
+        "clab-owner": "ass",
+        "clab-topo-file": "/home/ass/labs/lab0/topo1.clab.yml",
+        "containerlab": "topo1"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 11443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 1180,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 443,
+          "protocol": "tcp"
+        },
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 80,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "router1": {
+      "index": "3",
+      "shortname": "router1",
+      "longname": "clab-topo1-router1",
+      "fqdn": "router1.topo1.io",
+      "group": "",
+      "labdir": "/home/ass/labs/lab0/clab-topo1/router1",
+      "kind": "linux",
+      "image": "frr-with-ssh-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.101",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f48258793418",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ass/labs/lab0/clab-topo1/router1",
+        "clab-node-name": "router1",
+        "clab-node-type": "",
+        "clab-owner": "ass",
+        "clab-topo-file": "/home/ass/labs/lab0/topo1.clab.yml",
+        "containerlab": "topo1"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "router2": {
+      "index": "4",
+      "shortname": "router2",
+      "longname": "clab-topo1-router2",
+      "fqdn": "router2.topo1.io",
+      "group": "",
+      "labdir": "/home/ass/labs/lab0/clab-topo1/router2",
+      "kind": "linux",
+      "image": "frr-with-ssh-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.102",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f48258793418",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ass/labs/lab0/clab-topo1/router2",
+        "clab-node-name": "router2",
+        "clab-node-type": "",
+        "clab-owner": "ass",
+        "clab-topo-file": "/home/ass/labs/lab0/topo1.clab.yml",
+        "containerlab": "topo1"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    },
+    "router3": {
+      "index": "5",
+      "shortname": "router3",
+      "longname": "clab-topo1-router3",
+      "fqdn": "router3.topo1.io",
+      "group": "",
+      "labdir": "/home/ass/labs/lab0/clab-topo1/router3",
+      "kind": "linux",
+      "image": "frr-with-ssh-alpine",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.103",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-f48258793418",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/ass/labs/lab0/clab-topo1/router3",
+        "clab-node-name": "router3",
+        "clab-node-type": "",
+        "clab-owner": "ass",
+        "clab-topo-file": "/home/ass/labs/lab0/topo1.clab.yml",
+        "containerlab": "topo1"
+      },
+      "port-bindings": [
+        {
+          "host-ip": "",
+          "host-port": 0,
+          "port": 22,
+          "protocol": "tcp"
+        }
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "router1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:6a:85:e6",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:0c:3f:34",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "router1",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:30:6c:af",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:0c:5b:10",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "router2",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:9d:23:5e",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router3",
+        "interface": "eth2",
+        "mac": "aa:c1:ab:9b:48:cb",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC1",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:15:cc:39",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router1",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:25:75:d1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC2",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:90:fc:61",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router2",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:f5:91:e1",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "PC3",
+        "interface": "eth1",
+        "mac": "aa:c1:ab:b9:7f:7d",
+        "peer": "z"
+      },
+      "z": {
+        "node": "router3",
+        "interface": "eth3",
+        "mac": "aa:c1:ab:8e:f6:e7",
+        "peer": "a"
+      }
+    }
+  ]
+}

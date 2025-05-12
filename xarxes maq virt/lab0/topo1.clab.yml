@@ -1,0 +1,43 @@
+name: topo1
+
+topology:
+  nodes:
+    router1:
+      kind: linux
+      image: frr-with-ssh-alpine
+      binds:
+        - router1/daemons:/etc/frr/daemons
+        - router1/frr.conf:/etc/frr/frr.conf
+      mgmt-ipv4: 172.20.20.101
+       
+    router2:
+      kind: linux
+      image: frr-with-ssh-alpine
+      binds:
+        - router2/daemons:/etc/frr/daemons
+        - router2/frr.conf:/etc/frr/frr.conf
+      mgmt-ipv4: 172.20.20.102
+    router3:
+      kind: linux
+      image: frr-with-ssh-alpine
+      binds:
+        - router3/daemons:/etc/frr/daemons
+        - router3/frr.conf:/etc/frr/frr.conf
+      mgmt-ipv4: 172.20.20.103
+    PC1:
+      kind: linux
+      image: praqma/network-multitool:latest
+    PC2:
+      kind: linux
+      image: praqma/network-multitool:latest
+    PC3:
+      kind: linux
+      image: praqma/network-multitool:latest
+
+  links:
+    - endpoints: ["router1:eth1", "router2:eth1"]
+    - endpoints: ["router1:eth2", "router3:eth1"]
+    - endpoints: ["router2:eth2", "router3:eth2"]
+    - endpoints: ["PC1:eth1", "router1:eth3"]
+    - endpoints: ["PC2:eth1", "router2:eth3"]
+    - endpoints: ["PC3:eth1", "router3:eth3"]

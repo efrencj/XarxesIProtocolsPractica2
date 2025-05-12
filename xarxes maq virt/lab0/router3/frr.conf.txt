@@ -1,0 +1,9 @@
+frr version 8.4_git
+frr defaults traditional
+hostname router3
+no ipv6 forwarding
+service integrated-vtysh-config
+!
+interface eth3
+exit
+!
